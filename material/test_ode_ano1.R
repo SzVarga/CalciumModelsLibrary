@@ -15,7 +15,10 @@ model_params <- list(vols      = c(vol = 1e-11),
 #input_df["Ca"] <- input_df["Ca"]/f
 
 # Sine(baseline, amp, period, phase, duration, resolution)
-input_df <- as.data.frame(OscillatorGenerator::Sine(0, 1e06, 5, 5, 20, 0.01))
+input_df <- as.data.frame(OscillatorGenerator::Sinusoid(baseline = 0, peak = 1e06,
+                                                        period = 5, duty_cycle = 1,
+                                                        trend = 1, duration = 20,
+                                                        resolution = 0.01))
 
 colnames(input_df) <- c("time", "Ca")
 
