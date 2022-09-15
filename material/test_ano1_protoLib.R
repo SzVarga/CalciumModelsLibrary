@@ -40,8 +40,8 @@ active_ano_sum <- with(output, O + O_c + O_1 + O_1c + O_2 + O_2c)
 # sum of inactive ano1 species
 inactive_ano_sum <- with(output, C + C_c + C_1 + C_1c + C_2 + C_2c)
 # active ano fraction
-plot(output$time, active_ano_frac, col="red", type="l", ylim = c(0,0.06), xlab="time [s]", ylab="active ANO1 fraction [nmol/l]")
 active_ano_frac <- active_ano_sum/(active_ano_sum + inactive_ano_sum)
+plot(output$time, active_ano_frac, col="red", type="l", ylim = c(0, 1), xlab="time [s]", ylab="active ANO1 fraction [nmol/l]")
 par(new=T)
 plot(output$time, output$calcium, col="blue", type="l", axes=F, xlab=NA, ylab=NA, cex=1.2)
 axis(side = 4)
