@@ -1,5 +1,5 @@
 # Set rng seed for debugging tests
-#set.seed(1)
+set.seed(1)
 
 # Simulation parameters (Vector)
 sim_params <- list(timestep = 0.1,
@@ -10,7 +10,8 @@ model_params <- list(vols      = c(vol = 5e-15),
                                    W_B = 0,
                                    W_P = 0,
                                    W_T = 0,
-                                   W_A = 0))
+                                   W_A = 0),
+                     params = c(totalC = 40))
 
 
 # Create calcium input signal (unit: concentration nmol/l):

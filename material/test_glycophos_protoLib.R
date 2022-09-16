@@ -1,5 +1,5 @@
 # Set rng seed for debugging tests
-#set.seed(1)
+set.seed(1)
 
 # Simulation Parameters (Vector)
 sim_params <- list(timestep = 0.05,
@@ -33,6 +33,6 @@ par(mar = c(5,5,2,5))
 plot(output$time, output$Ca, col="blue", type="l", xlab="time [s]", ylab="glycogen phos. [nmol/l]")
 lines(output$time, output$Prot_act, col="red", type="l")
 lines(output$time, glycphos_active_frac, col="green", type="l")
-#axis(side = 4)
-#mtext(side = 4, line = 3, 'calcium [a.u]')
+axis(side = 4)
+mtext(side = 4, line = 3, 'calcium [a.u]')
 legend("topright", legend=c("calcium", "glycogen phos.", "active fraction [0,1]"), col=c("blue", "red", "green"), lty=c(1,1,1))
