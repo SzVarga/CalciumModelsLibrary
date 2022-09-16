@@ -1,3 +1,6 @@
+# This test script will probably work only with older versions of this package.
+# There is no callable function CalciumModelsLibrary::calmodulin() in current version.
+
 timestep <- 0.05
 vol <- 5e-14
 f <- 6.0221415e14*vol

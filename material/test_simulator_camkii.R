@@ -1,3 +1,6 @@
+# This test script will probably work only with older versions of this package.
+# There is no callable function CalciumModelsLibrary::simulator() in current version.
+
 # Create calcium input signal:
 # increase Ca from 50 to 600 at 100s, hold for 40s, then drop to 50 again
 # (like in Dupont_camkii.cps)

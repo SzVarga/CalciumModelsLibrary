@@ -1,3 +1,6 @@
+# This test script will probably work only with older versions of this package.
+# There is no callable function CalciumModelsLibrary::simulator() in current version.
+
 # Read Ca timeseries
 # Calcium input is expected to be in nM!
 input <- read.table("material/Sine_Input.txt", col.names = c("time", "Ca"))

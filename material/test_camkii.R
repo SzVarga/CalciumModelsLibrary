@@ -1,3 +1,6 @@
+# This test script will probably work only with older versions of this package.
+# There is no callable function CalciumModelsLibrary::camkii() in current version.
+
 # Define variables (values from copasi file dupont_camkii.cps)
 timestep <- 0.5
 vol <- 5e-15

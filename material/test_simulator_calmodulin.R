@@ -1,3 +1,6 @@
+# This test script will probably work only with older versions of this package.
+# There is no callable function CalciumModelsLibrary::simulator() in current version.
+
 # Read input data
 input <- read.table("material/ca5e-14_2.85_1000_0.05s.out", col.names = c("time", "steps", "G_alpha", "PLC", "Ca"))
 
