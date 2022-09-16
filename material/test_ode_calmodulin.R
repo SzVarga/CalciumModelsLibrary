@@ -9,7 +9,7 @@ model_params <- list(vols      = c(vol = 5e-14),
 # Input calcium time series
 input_df <- read.table("material/ca5e-14_2.85_1000_0.05s.out", col.names = c("time", "steps", "G_alpha", "PLC", "Ca"))
 # convert part number from input table to concentration (c*f=n since f = Avogadro*Vol)
-f <- 6.0221415e14*5e-14
+f <- 6.0221415e14*model_params[["vols"]][["vol"]]
 input_df["Ca"] <- input_df["Ca"]/f
 # Simulate Model
 output <- detSim_calmodulin(input_df,
